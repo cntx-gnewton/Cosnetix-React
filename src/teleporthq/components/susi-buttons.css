@@ -1,0 +1,29 @@
+.susi-buttons-btn-group {
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.susi-buttons-login {
+  transition: 0.3s;
+  border-width: 0px;
+  margin-right: var(--dl-space-space-twounits);
+}
+.susi-buttons-login:hover {
+  color: var(--dl-color-primary-100);
+  border-style: double;
+  text-decoration: underline;
+}
+.susi-buttons-register {
+  transition: 0.3s;
+  background-color: 500 (Primary);
+}
+.susi-buttons-register:hover {
+  background-color: var(--dl-color-primary-500);
+}
+@media(max-width: 767px) {
+  .susi-buttons-btn-group {
+    display: none;
+  }
+}

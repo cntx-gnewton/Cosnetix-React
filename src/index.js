@@ -1,21 +1,22 @@
-import { AppStateProvider } from './store' 
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
-import './teleporthq/style.css'
-import DesktopHome from './teleporthq/pages/desktop-home'
-import ProfilePage from './teleporthq/pages/profile-page'
-import HomePage from './teleporthq/pages/home-page'
+import './style.css'
+import DesktopHome from './views/desktop-home'
+import ProfilePage from './views/profile-page'
+import HomePage from './views/home-page'
+import Marketplace from './views/marketplace'
 
 const App = () => {
   return (
     <Router>
-      <AppStateProvider>
+      <div>
         <Route component={DesktopHome} exact path="/desktop-home" />
         <Route component={ProfilePage} exact path="/profile-page" />
         <Route component={HomePage} exact path="/" />
-      </AppStateProvider>
+        <Route component={Marketplace} exact path="/marketplace" />
+      </div>
     </Router>
   )
 }

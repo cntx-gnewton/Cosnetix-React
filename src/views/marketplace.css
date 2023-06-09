@@ -1,0 +1,46 @@
+.marketplace-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.marketplace-body {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+@media(max-width: 1200px) {
+  .marketplace-body {
+    width: 100%;
+    height: auto;
+  }
+}
+@media(max-width: 991px) {
+  .marketplace-body {
+    align-self: center;
+  }
+}
+@media(max-width: 767px) {
+  .marketplace-body {
+    width: 100%;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media(max-width: 479px) {
+  .marketplace-body {
+    width: auto;
+    height: auto;
+    align-self: stretch;
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+    padding-bottom: var(--dl-space-space-threeunits);
+  }
+}
